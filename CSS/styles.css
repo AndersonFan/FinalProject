@@ -1,0 +1,156 @@
+@font-face {
+	font-family: AlexBrush;
+	src: url("../fonts/AlexBrush.ttf") format("truetype");
+	font-family: Abel;
+	src: url("../fonts/Abel.ttf") format("truetype");
+}
+
+h1{
+	font-family: AlexBrush;
+	color:#fffafa;
+	text-align: left;
+	font-size: 30px;
+	margin-top: -0.3em;
+
+}
+li{
+	color:#fffafa;
+	font-size: 20px;
+	
+	display: inline-block;
+	text-align: center;
+	width:23%;
+	font-family: Abel;
+	
+
+}
+li:hover{
+	color:white;
+}
+ul{
+	list-style-type: none;
+	margin-top: -3.3em;
+	margin-left: 40%;
+	padding: 0;
+	
+}
+ 
+.dropdown-content{
+	display: none;
+	position:absolute;
+	
+	width: 90%;
+	box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+	margin-top: 0%;
+	margin-left: 5%;
+
+		}
+.dropdown{
+	position: relative;
+}
+.dropdown_title{
+	color: #ffffff;
+	margin-top: 10%;
+
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+	z-index: 2
+}
+.dropdown-content a {
+	color: #d9add9;
+	padding: 10px 16px;
+	text-decoration: none;
+	display: block;
+	z-index: 1;
+}
+.dropdown-content a:hover{
+	background-color: :#1f1f1f;
+}
+
+
+body{
+	background-color: #de5d83;
+
+}
+.transparent_background{
+	
+	padding: 4%;
+}
+.Title_Page{
+	    font-size: 2.5em;
+		margin-top: 16%;
+		margin-left: 23%;
+}
+.Start_Button{
+	font-family: Abel;
+	font-color:#FAFCFC;
+	font-size: 1.5em;
+	margin-top: 25%;
+	margin-left: 45%;
+}
+
+
+.video_frame{
+	border: 5px solid black;
+	margin-left: 5%;
+	margin-top: 4%;
+	width: 950px;
+	height: 500px;
+	background-color: #ffffff;
+	position:
+}
+video{
+	margin-left: 10%;
+	margin-top:5%;
+	z-index: 100;
+
+
+}
+
+
+.oneLine{
+	color:#ffffff;
+	font-size: 1em;
+	margin-top: 0%;
+	margin-left: 40%;
+}
+.socialMedia{
+	border:2px solid black;
+	width:90px;
+	height:18px;
+	text-align: center;
+	font-size: 15px;
+	border-radius: 15px;
+	float: left;
+	margin-top: 3%;
+	background-color:#ffe6ff;
+
+	}
+#Tw{
+	margin-left: -3%;
+
+}
+
+
+
+.PagesTitle{
+	text-align: center;
+	margin-top: 3%;
+
+}
+.PagesContent{
+	text-align: center;
+	color: white;
+	margin-top: 15%;
+	margin-left: 10%;
+	font-family: AlexBrush;
+	font-size: 15pt;
+	padding-left: 45%;
+	padding-right: 10%;
+}
+.floatLeft{
+	float:left;
+	margin-top: 5%;
+	margin-left: 5%;
+}
