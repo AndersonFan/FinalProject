@@ -1,98 +1,66 @@
-$(document).ready(function() {
 
-    $("#Tw").hover( function(){
-    	
+    
 
-    	$("#Tw").css("background-color","white");
-    });
-     $("#Tw").mouseout( function(){
+    var piclist = new Array (6);
+    var locationData = new Array (6);
+    var captionData = new Array (6);
+    
+    var fButtonListener;
+    var bButtonListener;
 
-    	$("#Tw").css("background-color","#ffe6ff");
-    });
-     $("#Fa").hover( function(){
-    	
+    var whichPic;
 
-    	$("#Fa").css("background-color","white");
-    });
-     $("#Fa").mouseout( function(){
+    piclist[0] = "images/1.jpg";
+    piclist[1] = "images/2.jpg";
+    piclist[2] = "images/3.jpg";
+    piclist[3] = "images/4.jpg";
+    piclist[4] = "images/5.jpg";
+    piclist[5] = "images/6.jpg";
 
-    	$("#Fa").css("background-color","#ffe6ff");
-    });
-     $("#In").hover( function(){
-    	
+    locationData[0] = "STEM Building, St. Mark's School, Southborough, MA";
+    locationData[1] = "STEM Building, St. Mark's School, Southborough, MA";
+    locationData[2] = "St. Mark's School, Southborough, MA";
+    locationData[3] = "Chapel, St. Mark's School, Southborough, MA";
+    locationData[4] = "Dining Hall, St. Mark's School, Southborough, MA";
+    locationData[5] = "Cage, St. Mark's School, Southborough, MA";
 
-    	$("#In").css("background-color","white");
-    });
-     $("#In").mouseout( function(){
-
-    	$("#In").css("background-color","#ffe6ff");
-    });
-    $("#Pi").hover( function(){
-    	
-
-    	$("#Pi").css("background-color","white");
-    });
-     $("#Pi").mouseout( function(){
-
-    	$("#Pi").css("background-color","#ffe6ff");
-    });  
-});
-var picList= new Array(6);
-var locationList = new Array(6);
-var captionList = new Array(6);
-
-var fButtonListener;
-var bButtonListener;
-
-
-var whichPic = 0;
-
-
-picList[0] = "images/1.JPG";
-picList[1] = "images/2.JPG";
-picList[2] = "images/3.JPG";
-picList[3] = "images/4.JPG";
-picList[4] = "images/5.JPG";
-picList[5] = "images/6.JPG";
-
-
-captionList[0] = "Hans Wu ";
-captionList[1] = "Luc Cote";
-captionList[2] = "A";
-captionList[3] = "B";
-captionList[4] = "C";
-captionList[5] = "D";
+    captionData[0] = "STEM Building";
+    captionData[1] = "STEM Building";
+    captionData[2] = "St. Mark's School";
+    captionData[3] = "Chapel";
+    captionData[4] = "Dining Hall";
+    captionData[5] = "Cage";
 
 
 
+window.onload = function() {
+   whichPic = 1; 
 
-window.onload = function(){
+   document.getElementById("picImgBox").src = piclist[4];
 
+   fButtonListener = document.getElementById("forwardButton");
+   bButtonListener = document.getElementById("backButton");
 
-document.getElementById("photos").src = picList[whichPic];
-document.getElementById("caption").innerHTML = captionList[whichPic];
+   fButtonListener.addEventListener('click', function(event) {
+              
+   	             ++whichPic;
+                 if(whichPic >= piclist.length ){
+                  whichPic = 0;
+                 }
+                 document.getElementById("locationStation").innerHTML = locationData[whichPic];
+                 document.getElementById("picImgBox").src = piclist[whichPic];
+                 document.getElementById("captionLoc").innerHTML = captionData[whichPic];
+   });
 
-fButtonListener = document.getElementById("forwardButton");
-bButtonListener = document.getElementById("backButton");
+   bButtonListener.addEventListener('click', function(event) {
+              
+   	           whichPic=whichPic-1;
+                 if(whichPic < 0){ 
+                  whichPic = piclist.length - 1;
+                 }
+                 document.getElementById("locationStation").innerHTML = locationData[whichPic];
+                 document.getElementById("picImgBox").src = piclist[whichPic];
+                 document.getElementById("captionLoc").innerHTML = captionData[whichPic];
+   });
 
-fButtonListener.addEventListener('click',function(event){
-    ++whichPic;
-    if (whichPic >= picList.length){
-        whichPic = 0;
-    }
-    document.getElementById("photos").src = picList[whichPic];
-
-document.getElementById("caption").innerHTML = captionList[whichPic];
-});
-bButtonListener.addEventListener('click',function(event){
-    --whichPic;
-    if (whichPic < 0){
-        whichPic = picList.length-1;
-    }
-    document.getElementById("photos").src = picList[whichPic];
-
-    document.getElementById("caption").innerHTML = captionList[whichPic];
-});
-
-
-}
+};
