@@ -1,0 +1,14 @@
+<!DDCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+ 
+  </head>
+  <body>
+  <h1 class="PagesTitle">Head's Reflection</h1>
+  <img class ="floatLeft" src="images/headmaster.jpg"  alt="Headmaster" width =55%, hight =50% />
+  <p class="PagesContent" id="ReflectionContent">I am proud to be leading a School that works so hard and so skillfully to ensure that every member of the community experiences St. Mark’s as safe. That safety requires careful attention to maintaining appropriate boundaries between students and adults and careful education about what constitutes healthy affirming interactions between students. A safe environment facilitates vitally important growth for our students. We will never be complacent about the potential for traumatic personal events occurring at St. Mark’s, and we will continue to do everything in our power to keep that possibility to a minimum.</p>
+
+  <div class = "Homebutton" id="ReflectionBack">
+	<a href="page2.html">Go Back</a>
+  </body>

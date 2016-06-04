@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: AlexBrush;
 	src: url("../fonts/AlexBrush.ttf") format("truetype");
@@ -5,34 +6,96 @@
 	src: url("../fonts/Abel.ttf") format("truetype");
 }
 
-h1{
+/* h1{
 	font-family: AlexBrush;
-	color:#fffafa;
+	color:#f5f5f5;
 	text-align: left;
 	font-size: 30px;
-	margin-top: -0.3em;
+	margin-top: 0.3em;
+	margin-left: %;
 
+} */
+
+h1{  
+	font-family: AlexBrush;
+	color:#f5f5f5;
+	width : 100%;
+    border-bottom: 3px solid red;
+    text-shadow: 2px 2px #ff0000;
 }
-li{
-	color:#fffafa;
+
+
+#AgeQuadAgis{
+	margin-bottom:0;
+}
+
+/* li{
+	color:#f5f5f5;
 	font-size: 20px;
 	
 	display: inline-block;
 	text-align: center;
-	width:23%;
+	width:25%;
 	font-family: Abel;
+	margin-top: 1%;
 	
 
+} */
+
+.floatIt{
+	float: left;
+}
+
+.box_common{
+	height: 109px;
+	text-align: center;
+}
+
+#box1{
+	width: 20%;
+	background-color: #7fffd4;
+}
+
+#box2{
+	width: 40%;
+	background-color: #7fffd4;
+}
+
+#box3{
+	width: 30%;
+	background-color: #7fffd4;
+}
+
+li {
+	color: #f5f5f5;
+ 	margin-top:0;
+ 	font-size: 1em;
+ 	display: inline-block;
+ 	text-align: center;
+ 	width: 19%;
+ 	background-color: brown;
+ 	font-family: Abel;
+ 	padding-top: .5%;
+ 	padding-bottom: 1%;
+ 
 }
 li:hover{
 	color:white;
 }
-ul{
+/* ul{
 	list-style-type: none;
 	margin-top: -3.3em;
-	margin-left: 40%;
+	/* margin-left: 45%;
 	padding: 0;
 	
+}*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: brown;
 }
  
 .dropdown-content{
@@ -40,16 +103,17 @@ ul{
 	position:absolute;
 	
 	width: 90%;
-	box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px rgba(0,0,128);
 	margin-top: 0%;
-	margin-left: 5%;
+	/*margin-left: 5%;*/
 
 		}
 .dropdown{
 	position: relative;
+
 }
 .dropdown_title{
-	color: #ffffff;
+	color: #add8e6;
 	margin-top: 10%;
 
 }
@@ -58,19 +122,19 @@ ul{
 	z-index: 2
 }
 .dropdown-content a {
-	color: #d9add9;
+	color: #ffffff;
 	padding: 10px 16px;
 	text-decoration: none;
 	display: block;
 	z-index: 1;
 }
 .dropdown-content a:hover{
-	background-color: :#1f1f1f;
+	background-color: :#5d8aa8;
 }
 
 
 body{
-	background-color: #de5d83;
+	background-color: #5d8aa8;
 
 }
 .transparent_background{
@@ -83,7 +147,7 @@ body{
 		margin-left: 23%;
 }
 .Start_Button{
-	font-family: Abel;
+	font-family: AlexBrush;
 	font-color:#FAFCFC;
 	font-size: 1.5em;
 	margin-top: 25%;
@@ -116,6 +180,22 @@ video{
 	margin-left: 40%;
 }
 
+.socialMedia{
+	border:2px solid black;
+	width:80px;
+	height:18px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 16px;
+	/*float: left;
+	margin-top: 3%;*/
+	background-color:#5d8aa8;
+
+	}
+#SMFacebook{
+	/* margin-left: -3%; */
+
+}
 
 .PagesTitle{
 	text-align: center;
@@ -125,10 +205,10 @@ video{
 .PagesContent{
 	text-align: center;
 	color: white;
-	margin-top: 15%;
+	margin-top: 17%;
 	margin-left: 10%;
-	font-family: AlexBrush;
-	font-size: 15pt;
+	font-family: Abel;
+	font-size: 17pt;
 	padding-left: 45%;
 	padding-right: 10%;
 }
@@ -137,3 +217,55 @@ video{
 	margin-top: 5%;
 	margin-left: 5%;
 }
+.Homebutton{
+	margin-top:10%;
+	margin-left: 49%;
+} 
+#WelcomeBack{
+	margin-left: 48%;
+	margin-top: 8%;
+}
+#ReflectionBack{
+	margin-left: 48%;
+	margin-top: 13%;
+}
+
+#AboutUsBack{
+	margin-left: 48%;
+	margin-top: 2%;
+}
+
+#AboutUsContent{
+	margin-left: 5%;
+	margin-top: 20%;
+}
+
+#ReflectionContent{
+	margin-left: 5%;
+	margin-top: 20%;
+}
+
+#WelcomeContent{
+	margin-left: 5%;
+	margin-top: 20%;
+}
+
+#PhotoBack{
+	margin-left: 48%;
+	margin-top: 2%;
+}
+
+img {
+       float: left;
+       /*padding: 10px; */
+         
+       margin-right: 10px;
+       margin-bottom: 10px;
+       
+
+       border-style: dotted solid black;
+       border-color: white}
+
+
+}
+

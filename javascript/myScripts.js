@@ -1,5 +1,6 @@
 
-    
+    var interval;
+
 
     var piclist = new Array (6);
     var locationData = new Array (6);
@@ -38,6 +39,8 @@ window.onload = function() {
 
    document.getElementById("picImgBox").src = piclist[4];
 
+
+   interval = setInterval("goage");
    fButtonListener = document.getElementById("forwardButton");
    bButtonListener = document.getElementById("backButton");
 
@@ -64,3 +67,32 @@ window.onload = function() {
    });
 
 };
+
+$(document).ready(function() {
+
+
+
+    $("#SMFacebook").hover( function(){
+        
+
+        $("#SMFacebook").css("background-color","#000080");
+    });
+     $("#SMFacebook").mouseout( function(){
+
+        $("#SMFacebook").css("background-color","#ffffff");
+    });
+     
+     $("#SMTwitter").hover( function(){
+        
+     $("#SMTwitter").css("background-color","#000080");
+    });
+     $("#SMTwitter").mouseout( function(){
+
+        $("#SMTwitter").css("background-color","#ffffff");
+    });
+
+
+});
+
+
+

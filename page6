@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+     <h1>Welcome</h1>
+
+
+</head>
+
+
+<body>
+     <h2>Admission Announcement</h2>
+     <h2>Experience St. Mark's</h2>
+
+<div class = "transparent_background">
+    <p><img class ="floatLeft" src="images/draft.jpg"  alt="nashdraft" width =15%, hight =20% /><span class="Firstletter">I</span>ham delighted that you are interested in St. Mark’s School and I hope that you benefit from the information and resources provided on our website. St. Mark’s, founded in 1865, is a college-preparatory boarding and day school, grades nine through twelve. Nestled upon 250 acres in the picturesque suburb of Southborough, Massachusetts, the school is only 25 miles from the abundant cultural and social opportunities in Boston. Hopefully, this website and this video <a class="mylinks" href="http://www.stmarksschool.org/admission/linked/lion-bytes-2014/index.aspx">Voice of St. Mark's</a> will adequately shine a spotlight on both aspects of life at St. Mark’s — the serious and the fun. Here, you will find much information about the riches of our curriculum, boarding life, our athletic and artistic offerings, and our extracurricular programs. This website also describes how we maintain vibrant connections with the larger world. <a class="mylinks" href="http://www.stmarksschool.org/admission/why-st-marks-school/index.aspx">Why St. Mark's</a>
+
+  </p>
+  </div>
+
+    <div class = "Homebutton" id="WelcomeBack">
+	<a href="page2.html">Go Back</a>
+  </body>
+
+  
+</html>
